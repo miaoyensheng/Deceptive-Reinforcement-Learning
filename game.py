@@ -23,7 +23,7 @@
 from util import *
 import time, os
 import traceback
-import sys
+import sys, math
 
 #######################
 # Parts worth reading #
@@ -383,6 +383,8 @@ class GameStateData:
             self.layout = prevState.layout
             self._eaten = prevState._eaten
             self.score = prevState.score
+            # self added 
+            self.ldp = prevState.ldp[:]
 
         self._foodEaten = None
         self._foodAdded = None
@@ -391,6 +393,48 @@ class GameStateData:
         self._lose = False
         self._win = False
         self.scoreChange = 0
+
+    #  calculate the ldp position
+    def getLDP(self):
+        """
+        Returns 
+        """
+        realGoal = self.layout.food.asList()[0]
+        startPosition = self.layout.agentPositions[0][1]
+        ldp = []
+        if self.layout.capsules:
+            for fakeGoal in self.layout.capsules:
+            # fakeGoal = self.layout.capsules[0]
+                x1, y1 = startPosition
+                x2, y2 = realGoal
+                x3, y3 = fakeGoal
+                # print (startPosition, realGoal, fakeGoal)
+                
+                a = math.hypot(x2 - x1, y2 - y1)
+                b = math.hypot(x3 - x1, y3 - y1)
+                c = math.hypot(x3 - x2, y3 - y2)
+                beta = (a+c-b)/2
+                
+                startX, endX = min(x2, x3), max(x2, x3)
+                startY = y2 if startX == x2 else y3
+                endY = y2 if endX == x2 else y3
+                # print (startX,startY)
+                # print (endX, endY)
+                for x in range(startX+1, endX):
+                    y = float((x-startX)*(endY-startY))/(endX-startX)+startY
+                    # print y
+                    # if round(y) == y:
+                        # print x,y
+                    dist = math.hypot(x-x2, y-y2)
+                    # print beta,dist
+
+                    if dist >= beta:
+                        y = math.ceil(y) if y3 > y2 else math.floor(y)
+                        # print beta,dist
+                        ldp.append([beta,(float(x), float(y))])
+                        break
+        minLDP = min(ldp, key =lambda x: x[0])[1]
+        return [minLDP]
 
     def deepCopy( self ):
         state = GameStateData( self )
@@ -494,6 +538,9 @@ class GameStateData:
         self.layout = layout
         self.score = 0
         self.scoreChange = 0
+        # newly added
+        self.ldp = self.getLDP()
+        # print "GAME",self.ldp
 
         self.agentStates = []
         numGhosts = 0
