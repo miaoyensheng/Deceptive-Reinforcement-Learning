@@ -46,7 +46,7 @@ from game import Actions
 from util import nearestPoint
 from util import manhattanDistance
 import util, layout
-import sys, types, time, random, os
+import sys, types, time, random, os, math
 
 ###################################################
 # YOUR INTERFACE TO THE PACMAN WORLD: A GameState #
@@ -360,22 +360,40 @@ class PacmanRules:
         x,y = position
         # Eat food
         if state.data.food[x][y]:
-            state.data.scoreChange += 10
+            # print state.data.layout.capsules
+            # print state.data.ldp
+            state.data.scoreChange += 100
             state.data.food = state.data.food.copy()
             state.data.food[x][y] = False
             state.data._foodEaten = position
             # TODO: cache numFood?
             numFood = state.getNumFood()
             if numFood == 0 and not state.data._lose:
-                state.data.scoreChange += 500
+                # state.data.scoreChange += 500
                 state.data._win = True
-        # Eat capsule
+        
+        # use capsule as fake goal
         if( position in state.getCapsules() ):
-            state.data.capsules.remove( position )
-            state.data._capsuleEaten = position
-            # Reset all ghosts' scared timers
-            for index in range( 1, len( state.data.agentStates ) ):
-                state.data.agentStates[index].scaredTimer = SCARED_TIME
+            state.data._lose = True
+            # state.data.capsules.remove( position )
+            # state.data._capsuleEaten = position
+
+        # reach LDP
+        ldp = state.data.ldp
+        print "PACMAN", ldp
+        if (position in ldp):
+            state.data.ldp.remove( position )
+            
+            state.data.scoreChange += 1000
+
+        # Eat capsule
+        # if( position in state.getCapsules() ):
+        #     state.data.scoreChange += 1000
+        #     state.data.capsules.remove( position )
+        #     state.data._capsuleEaten = position
+        #     # Reset all ghosts' scared timers
+        #     for index in range( 1, len( state.data.agentStates ) ):
+        #         state.data.agentStates[index].scaredTimer = SCARED_TIME
     consume = staticmethod( consume )
 
 class GhostRules:
