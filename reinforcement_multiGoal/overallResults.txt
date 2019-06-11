@@ -1,0 +1,151 @@
+    
+    
+fake goal 1 position: fakeGoal1_1
+fake goal 2 position: fakeGoal2_1
+real goal position: realGoal_1
+    
+
+optimality = 0.333333333333
+density = 0.5
+Ldp = (3.0, 1.0)
+nshortest = 6
+nldp = 6.0
+ntotal = 8
+ntruthful = 2
+positions = [(3, 5), (4, 5), (4, 4), (4, 3), (4, 2), (4, 1), (3, 1), (2, 1)]
+directions = ['East', 'South', 'South', 'South', 'South', 'West', 'West', 'West']
+    
+    
+fake goal 1 position: fakeGoal1_1
+fake goal 2 position: fakeGoal2_1
+real goal position: realGoal_1
+    
+
+Error    
+    
+fake goal 1 position: fakeGoal1_2
+fake goal 2 position: fakeGoal2_2
+real goal position: realGoal_2
+    
+
+optimality = 1.0
+density = inf
+Ldp = (3.0, 1.0)
+nshortest = 4
+nldp = 8.0
+ntotal = 8
+ntruthful = 0
+positions = [(1, 5), (2, 5), (3, 5), (3, 4), (3, 3), (3, 2), (3, 1), (2, 1)]
+directions = ['East', 'East', 'South', 'South', 'South', 'South', 'West', 'West']
+    
+    
+fake goal 1 position: fakeGoal1_2
+fake goal 2 position: fakeGoal2_2
+real goal position: realGoal_2
+    
+
+optimality = 1.0
+density = inf
+Ldp = (3.0, 1.0)
+nshortest = 4
+nldp = 8.0
+ntotal = 8
+ntruthful = 0
+positions = [(1, 5), (2, 5), (3, 5), (3, 4), (3, 3), (3, 2), (3, 1), (2, 1)]
+directions = ['East', 'East', 'South', 'South', 'South', 'South', 'West', 'West']
+    
+    
+fake goal 1 position: fakeGoal1_3
+fake goal 2 position: fakeGoal2_3
+real goal position: realGoal_3
+    
+
+optimality = 0.25
+density = 0.125
+Ldp = (1.0, 1.0)
+nshortest = 8
+nldp = 8.0
+ntotal = 10
+ntruthful = 8
+positions = [(1, 5), (2, 5), (3, 5), (3, 4), (3, 3), (2, 3), (2, 2), (2, 1), (3, 1), (4, 1)]
+directions = ['East', 'East', 'South', 'South', 'West', 'South', 'South', 'East', 'East', 'East']
+    
+    
+fake goal 1 position: fakeGoal1_3
+fake goal 2 position: fakeGoal2_3
+real goal position: realGoal_3
+    
+
+optimality = 0.0
+density = 0.2
+Ldp = (1.0, 1.0)
+nshortest = 8
+nldp = 8.0
+ntotal = 8
+ntruthful = 5
+positions = [(1, 5), (2, 5), (3, 5), (4, 5), (4, 4), (4, 3), (4, 2), (5, 2)]
+directions = ['East', 'East', 'East', 'South', 'South', 'South', 'East', 'South']
+    
+    
+fake goal 1 position: fakeGoal1_4
+fake goal 2 position: fakeGoal2_4
+real goal position: realGoal_4
+    
+
+optimality = 0.0
+density = inf
+Ldp = (4.0, 1.0)
+nshortest = 6
+nldp = 8.0
+ntotal = 6
+ntruthful = 0
+positions = [(1, 5), (1, 4), (1, 3), (1, 2), (2, 2), (2, 1)]
+directions = ['South', 'South', 'South', 'East', 'South', 'East']
+    
+    
+fake goal 1 position: fakeGoal1_4
+fake goal 2 position: fakeGoal2_4
+real goal position: realGoal_4
+    
+
+optimality = 0.333333333333
+density = inf
+Ldp = (4.0, 1.0)
+nshortest = 6
+nldp = 8.0
+ntotal = 8
+ntruthful = 0
+positions = [(1, 5), (1, 4), (1, 3), (1, 2), (2, 2), (3, 2), (4, 2), (4, 1)]
+directions = ['South', 'South', 'South', 'East', 'East', 'East', 'South', 'West']
+    
+    
+fake goal 1 position: fakeGoal1_5
+fake goal 2 position: fakeGoal2_5
+real goal position: realGoal_5
+    
+
+optimality = 0.0
+density = 0.333333333333
+Ldp = (3.0, 1.0)
+nshortest = 8
+nldp = 8.0
+ntotal = 8
+ntruthful = 3
+positions = [(1, 5), (1, 4), (1, 3), (1, 2), (2, 2), (3, 2), (4, 2), (4, 1)]
+directions = ['South', 'South', 'South', 'East', 'East', 'East', 'South', 'East']
+    
+    
+fake goal 1 position: fakeGoal1_5
+fake goal 2 position: fakeGoal2_5
+real goal position: realGoal_5
+    
+
+optimality = 0.0
+density = 0.5
+Ldp = (3.0, 1.0)
+nshortest = 8
+nldp = 8.0
+ntotal = 8
+ntruthful = 2
+positions = [(1, 5), (1, 4), (1, 3), (1, 2), (2, 2), (3, 2), (3, 1), (4, 1)]
+directions = ['South', 'South', 'South', 'East', 'East', 'South', 'East', 'East']
