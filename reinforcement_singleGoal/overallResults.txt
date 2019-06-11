@@ -1,0 +1,150 @@
+    
+    
+fake goal position: fakeGoal_1_5
+real goal position: realGoal_1_5
+    
+
+    
+    
+fake goal position: fakeGoal_1_5
+real goal position: realGoal_1_5
+    
+
+    
+    
+fake goal position: fakeGoal_1_5
+real goal position: realGoal_1_5
+    
+
+    
+    
+fake goal position: fakeGoal_1_5
+real goal position: realGoal_1_5
+    
+
+    
+    
+fake goal position: fakeGoal_1_5
+real goal position: realGoal_1_5
+    
+
+    
+    
+fake goal position: fakeGoal_2_5
+real goal position: realGoal_2_5
+    
+
+    
+    
+fake goal position: fakeGoal_2_5
+real goal position: realGoal_2_5
+    
+
+    
+    
+fake goal position: fakeGoal_2_5
+real goal position: realGoal_2_5
+    
+
+    
+    
+fake goal position: fakeGoal_2_5
+real goal position: realGoal_2_5
+    
+
+    
+    
+fake goal position: fakeGoal_2_5
+real goal position: realGoal_2_5
+    
+
+    
+    
+fake goal position: fakeGoal_3_5
+real goal position: realGoal_3_5
+    
+
+    
+    
+fake goal position: fakeGoal_3_5
+real goal position: realGoal_3_5
+    
+
+    
+    
+fake goal position: fakeGoal_3_5
+real goal position: realGoal_3_5
+    
+
+    
+    
+fake goal position: fakeGoal_3_5
+real goal position: realGoal_3_5
+    
+
+    
+    
+fake goal position: fakeGoal_3_5
+real goal position: realGoal_3_5
+    
+
+    
+    
+fake goal position: fakeGoal_4_5
+real goal position: realGoal_4_5
+    
+
+    
+    
+fake goal position: fakeGoal_4_5
+real goal position: realGoal_4_5
+    
+
+    
+    
+fake goal position: fakeGoal_4_5
+real goal position: realGoal_4_5
+    
+
+    
+    
+fake goal position: fakeGoal_4_5
+real goal position: realGoal_4_5
+    
+
+    
+    
+fake goal position: fakeGoal_4_5
+real goal position: realGoal_4_5
+    
+
+    
+    
+fake goal position: fakeGoal_5_5
+real goal position: realGoal_5_5
+    
+
+    
+    
+fake goal position: fakeGoal_5_5
+real goal position: realGoal_5_5
+    
+
+    
+    
+fake goal position: fakeGoal_5_5
+real goal position: realGoal_5_5
+    
+
+    
+    
+fake goal position: fakeGoal_5_5
+real goal position: realGoal_5_5
+    
+
+    
+    
+fake goal position: fakeGoal_5_5
+real goal position: realGoal_5_5
+    
+
